@@ -8,3 +8,5 @@ func Reverse(s string) string {
     }
     return string(b)
 }
+
+// go install
