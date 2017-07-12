@@ -5,7 +5,7 @@ import (
     "math"
 )
 
-// interface values can be thought of as a tuple of a value and a concrete type: (value, type)
+// interface values can be thought of as a tuple of a value and a concrete type: (value, concrete type)
 // Calling a method on an interface value executes the method of the same name on its underlying type.
 
 type I interface {
