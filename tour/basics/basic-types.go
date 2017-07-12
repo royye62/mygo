@@ -17,10 +17,11 @@ array
 struct
 
 reference types:
+pointer
 slice
 map
 func
-channel
+chan
 
 interface type
 

@@ -6,7 +6,7 @@ import (
 )
 
 /*
-Outside a function, every statement begins with a keyword: 
+Outside a function, every statement begins with a keyword, there are four kinds of declaration: 
 var
 func
 const
