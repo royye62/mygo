@@ -17,10 +17,11 @@ array
 struct
 
 reference types:
+pointer
 slice
 map
 func
-channel
+chan
 
 interface type: represent fixed sets of methods, An interface variable can store any concrete (non-interface) value as long as that value implements the interface's methods.
 

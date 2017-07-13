@@ -18,5 +18,7 @@ func main() {
     f, ok := i.(float64)
     fmt.Println(f, ok)
 
-    f1 := i.(float64) // panic
+    //f, ok := i.(float64)  // no new variables on left side of :=   f, ok must have one is not declare
+    //f1, ok := i.(float64) // panic
+    fmt.Println(f1, ok)
 }
