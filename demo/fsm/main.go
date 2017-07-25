@@ -75,6 +75,7 @@ func main() {
  efan.Call(PowerOffEvent) // 按下关闭按钮
  efan.Call(SecondGearEvent) // 按下2档按钮
  efan.Call(PowerOffEvent) // 按下关闭按钮
- efan.Call(FSMEvent("xxx")) // 按下关闭按钮
+ ret := efan.Call(FSMEvent("xxx")) // 
+ fmt.Println("ret:", ret);
 }
 

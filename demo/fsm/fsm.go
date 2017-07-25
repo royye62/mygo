@@ -1,3 +1,4 @@
+// https://segmentfault.com/p/1210000010318512/read  有限状态机FSM的原理与GO的实现
 // fsm.go
 package main
 

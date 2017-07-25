@@ -9,6 +9,7 @@ import "fmt"
 func main() {
     var i interface{} = "hello"
 
+    // asserts s implements string
     s := i.(string)
     fmt.Println(s)
 
@@ -19,6 +20,6 @@ func main() {
     fmt.Println(f, ok)
 
     //f, ok := i.(float64)  // no new variables on left side of :=   f, ok must have one is not declare
-    //f1, ok := i.(float64) // panic
+    f1 := i.(float64) // panic
     fmt.Println(f1, ok)
 }
