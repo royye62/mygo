@@ -7,5 +7,16 @@ func main() {
   m.Get("/", func() string {
     return "Hello world!"
   })
-  m.Run()
+
+  m.Group("/books", func(r martini.Router) {
+      r.Get("/:id", func(params martini.Params) string {
+        return "get book " + params["id"]
+      })
+      //r.Post("/new", NewBook)
+      r.Get("/delete/:id", func(params martini.Params) string {
+        return "delete book " + params["id"]
+      })
+  })
+
+  m.RunOnAddr(":8080")
 }
