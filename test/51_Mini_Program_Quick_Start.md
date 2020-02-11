@@ -136,8 +136,6 @@ TencentOS_tiny\tools\Mini_Program\iotexplorer_mp_cloudfunctions_demo
 
 腾讯云提供的[API 3.0 Explorer](https://cloud.tencent.com/document/api)，可以非常方便的生成 API SDK代码。只需要稍微修改，就可以直接在云函数中使用。
 
-![api 3.0 explorer](image/mini_program/mp_api_explorer.png)
-
 + 自动生成API SDK代码
   + 进入[API 3.0 Explorer工具](https://console.cloud.tencent.com/api/explorer)
   + 左侧选择对应服务，如：“物联网开发平台”
@@ -146,10 +144,12 @@ TencentOS_tiny\tools\Mini_Program\iotexplorer_mp_cloudfunctions_demo
   + 使用在线调用，测试接口是否调用成功
   + 测试完成后，选择生成NodeJS代码。将代码拷贝，后续用于云函数中
 
-+ 创建并实现云函数
-  + 创建云函数query，将自动生成的NodeJS代码拷贝到云函数，并稍作修改即可使用。修改内容参考[TencentOS-tiny\tools\Mini_Program\iotexplorer_mp_cloudfunctions_demo\cloudfunctions\query\index.js](https://github.com/Tencent/TencentOS-tiny/blob/master/tools/Mini_Program/iotexplorer_mp_cloudfunctions_demo/cloudfunctions/query/index.js)
+![api 3.0 explorer](image/mini_program/mp_api_explorer.png)
 
-  + 修改完成后，记得上传部署
++ 创建并实现云函数
+  + 创建云函数query，将自动生成的NodeJS代码拷贝到云函数，并稍作修改即可使用。参考[TencentOS-tiny\tools\Mini_Program\iotexplorer_mp_cloudfunctions_demo\cloudfunctions\query\index.js](https://github.com/Tencent/TencentOS-tiny/blob/master/tools/Mini_Program/iotexplorer_mp_cloudfunctions_demo/cloudfunctions/query/index.js)
+
+  + 记得上传部署修改后的云函数
 
 + 调用云函数
   + 调用云函数的代码也很简单。参考：[TencentOS-tiny\tools\Mini_Program\iotexplorer_mp_cloudfunctions_demo\miniprogram\pages\index\index.js#queryDeviceData()](https://github.com/Tencent/TencentOS-tiny/blob/master/tools/Mini_Program/iotexplorer_mp_cloudfunctions_demo/miniprogram/pages/index/index.js)
