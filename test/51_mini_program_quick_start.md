@@ -37,13 +37,13 @@
 
 ### 申请小程序账号
 
-进入 [小程序注册页](https://mp.weixin.qq.com/wxopen/waregister?action=step1&token=&lang=zh_CN)  根据指引填写信息和提交相应的资料，就可以拥有自己的小程序帐号
+进入 [小程序注册页](https://mp.weixin.qq.com/wxopen/waregister?action=step1&token=&lang=zh_CN) `https://mp.weixin.qq.com/` 根据指引填写信息和提交相应的资料，就可以拥有自己的小程序帐号
 
 ### 小程序管理后台
 
 申请小程序成功后，登录[小程序管理后台](https://mp.weixin.qq.com/) 。在小程序管理平台，你可以管理你的小程序的权限，查看数据报表，发布小程序等操作。
 
-AppID: 在菜单 “设置”-“开发设置” 可以看到小程序的 AppID，小程序的 AppID 相当于小程序平台的一个身份证，在小程序项目的基本信息中需要配置AppID。
+AppID：在菜单 “设置”-“开发设置” 可以看到小程序的 AppID，小程序的 AppID 相当于小程序平台的一个身份证，在小程序项目的基本信息中需要配置AppID。
 
 ![小程序后台](image/mini_program/mp_appid.png)
 
@@ -82,8 +82,8 @@ Demo案例以开发智能灯应用为例子，在小程序开发之前，应该�
 TencentOS_tiny\tools\Mini_Program\iotexplorer_mp_demo
 ![导入普通开发Demo项目](image/mini_program/mp_normaldev_import_project.png)
 
-注：
-AppID可在小程序管理后台获取，本地调试可以先使用测试号
+
+> 注：AppID可在小程序管理后台获取，本地调试可以先使用测试号
 
 #### 修改配置
 在miniprogram/app.js里更新配置信息，参考[配置信息说明](#配置信息说明)
@@ -92,7 +92,7 @@ AppID可在小程序管理后台获取，本地调试可以先使用测试号
 #### 功能扩展
 SDK支持的api参见iotclient.js，开发者可以基于案例进行功能扩展：TencentOS_tiny\tools\Mini_Program\iotexplorer_mp_demo\iotclient_for_miniprogram\iotclient.js
 
-注：腾讯云暂时没有提供小程序端的API SDK，本案例的小程序SDK(iotclient_for_miniprogram)是基于[腾讯云的NodeJS SDK](https://github.com/TencentCloud/tencentcloud-sdk-nodejs/tree/master/tencentcloud/iotexplorer)移植过来的
+> 注：腾讯云暂时没有提供小程序端的API SDK，本案例的小程序SDK(iotclient_for_miniprogram)是基于[腾讯云的NodeJS SDK](https://github.com/TencentCloud/tencentcloud-sdk-nodejs/tree/master/tencentcloud/iotexplorer)移植过来的
 
 ### 云开发方式（云函数）
 
@@ -105,8 +105,7 @@ TencentOS_tiny\tools\Mini_Program\iotexplorer_mp_cloudfunctions_demo
 
 ![导入云开发Demo项目](image/mini_program/mp_clouddev_demo_import_project.png)
 
-注：
-AppID可在小程序管理后台获取；测试号不支持云开发，必须申请小程序账号
+> 注：AppID可在小程序管理后台获取；测试号不支持云开发，必须申请小程序账号
 
 #### 开通云开发，创建环境
 
@@ -116,8 +115,7 @@ AppID可在小程序管理后台获取；测试号不支持云开发，必须申
 
 ![创建云环境](image/mini_program/mp_clouddev_demo_create_env.png)
 
-例如：
-填入环境名称为tos-demo, 环境ID为tos-demo。
+> 例如：填入环境名称为tos-demo, 环境ID为tos-demo。
 
 #### 部署云函数
 
@@ -137,7 +135,7 @@ AppID可在小程序管理后台获取；测试号不支持云开发，必须申
 #### 功能扩展：结合API 3.0 Explorer工具快速实现云函数  
 
 腾讯云提供的[API 3.0 Explorer工具](https://console.cloud.tencent.com/api/explorer)，可以非常方便的生成 API SDK代码。只需要稍微修改，就可以直接在云函数中使用。
-[注：API 3.0 Explorer介绍](https://cloud.tencent.com/document/api)
+[API 3.0 Explorer的介绍](https://cloud.tencent.com/document/api)
 
 ![api 3.0 explorer](image/mini_program/mp_api_explorer.png)
 
