@@ -33,7 +33,7 @@
 
 ## 1.1. 开发环境准备
 
-> 想了解更多小程序开发，请参见：[小程序官方开发指南](https://developers.weixin.qq.com/miniprogram/dev/framework/quickstart/getstart.html)
+> 更详细小程序开发指南，请参见：[官方小程序开发指南](https://developers.weixin.qq.com/miniprogram/dev/framework/quickstart/getstart.html)
 
 ### 1.1.1. 申请小程序账号
 
@@ -95,7 +95,7 @@ SDK支持的api参见iotclient.js，开发者可以基于案例进行功能扩�
 
 ### 1.2.4. 云开发方式（云函数）
 
-> 想了解更多云开发资料，可以参见[官方的云开发快速指引](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/quickstart.html)
+> 更详细的云开发指南，请参见[官方的云开发快速指引](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/quickstart.html)
 
 #### 1.2.4.1. 导入工程
 
