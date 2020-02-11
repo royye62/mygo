@@ -147,8 +147,9 @@ TencentOS_tiny\tools\Mini_Program\iotexplorer_mp_cloudfunctions_demo
   + 测试完成后，选择生成NodeJS代码。将代码拷贝，后续用于云函数中
 
 + 创建并实现云函数
-  + 创建云函数query，将自动生成的NodeJS代码拷贝到云函数，并稍作修改即可使用。修改完成后，记得上传部署
-  + 修改内容参考[TencentOS-tiny\tools\Mini_Program\iotexplorer_mp_cloudfunctions_demo\cloudfunctions\query\index.js](https://github.com/Tencent/TencentOS-tiny/blob/master/tools/Mini_Program/iotexplorer_mp_cloudfunctions_demo/cloudfunctions/query/index.js)
+  + 创建云函数query，将自动生成的NodeJS代码拷贝到云函数，并稍作修改即可使用。修改内容参考[TencentOS-tiny\tools\Mini_Program\iotexplorer_mp_cloudfunctions_demo\cloudfunctions\query\index.js](https://github.com/Tencent/TencentOS-tiny/blob/master/tools/Mini_Program/iotexplorer_mp_cloudfunctions_demo/cloudfunctions/query/index.js)
+
+  + 修改完成后，记得上传部署
 
 + 调用云函数
   + 调用云函数的代码也很简单。参考：[TencentOS-tiny\tools\Mini_Program\iotexplorer_mp_cloudfunctions_demo\miniprogram\pages\index\index.js#queryDeviceData()](https://github.com/Tencent/TencentOS-tiny/blob/master/tools/Mini_Program/iotexplorer_mp_cloudfunctions_demo/miniprogram/pages/index/index.js)
