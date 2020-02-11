@@ -75,13 +75,12 @@ Demo案例以开发智能灯应用为例子，在小程序开发之前，应该�
    
 参考智能灯数据模案例：TencentOS_tiny/examples/qcloud_iot_explorer_sdk_data_template
 
-
 ### 普通开发方式（SDK）
 #### 导入工程
 在小程序开发工具中，导入项目：
 TencentOS_tiny\tools\Mini_Program\iotexplorer_mp_demo
-![导入普通开发Demo项目](image/mini_program/mp_normaldev_import_project.png)
 
+![导入普通开发Demo项目](image/mini_program/mp_normaldev_import_project.png)
 
 > 注：AppID可在小程序管理后台获取，本地调试可以先使用测试号
 
@@ -140,7 +139,8 @@ TencentOS_tiny\tools\Mini_Program\iotexplorer_mp_cloudfunctions_demo
 
 ![api 3.0 explorer](image/mini_program/mp_api_explorer.png)
 
-+ API 3.0 Explorer工具使用步骤：
++ 自动生成API SDK代码
+  + API 3.0 Explorer工具使用步骤：
   + 左侧选择对应服务-“物联网开发平台”
   + 选择对应接口，如：“数据查询相关接口”-“获取设备属性数据”
   + 填写个人密钥和输入参数。参见[配置信息说明](#配置信息说明)
@@ -149,12 +149,12 @@ TencentOS_tiny\tools\Mini_Program\iotexplorer_mp_cloudfunctions_demo
 
 + 创建并实现云函数
   + 创建云函数query，将自动生成的NodeJS代码拷贝到云函数，并稍作修改即可使用。修改完成后，记得上传部署
-  + 修改内容参考：TencentOS-tiny\tools\Mini_Program\iotexplorer_mp_cloudfunctions_demo\cloudfunctions\query\index.js
+  + 修改内容参考[TencentOS-tiny\tools\Mini_Program\iotexplorer_mp_cloudfunctions_demo\cloudfunctions\query\index.js](https://github.com/Tencent/TencentOS-tiny/blob/master/tools/Mini_Program/iotexplorer_mp_cloudfunctions_demo/cloudfunctions/query/index.js)
 
 + 调用云函数
-  + 调用云函数的代码也很简单。参考：
-TencentOS-tiny\tools\Mini_Program\iotexplorer_mp_cloudfunctions_demo\miniprogram\pages\index\index.js#queryDeviceData()
-````
+  + 调用云函数的代码也很简单。参考：[TencentOS-tiny\tools\Mini_Program\iotexplorer_mp_cloudfunctions_demo\miniprogram\pages\index\index.js#queryDeviceData()](https://github.com/Tencent/TencentOS-tiny/blob/master/tools/Mini_Program/iotexplorer_mp_cloudfunctions_demo/miniprogram/pages/index/index.js)
+
+```javascript
     // 调用云函数query
     wx.cloud.callFunction({
       name: 'query2',
@@ -185,7 +185,7 @@ TencentOS-tiny\tools\Mini_Program\iotexplorer_mp_cloudfunctions_demo\miniprogram
         console.error('[云函数] [iotexplorer] 调用失败：', err)
       }
     })  
-````
+```
 
 ### 调试和发布
 上文的步骤完成后，就可以对基本功能进行调试，如：查询和控制设备。
