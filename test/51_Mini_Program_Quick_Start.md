@@ -195,6 +195,7 @@ TencentOS_tiny\tools\Mini_Program\iotexplorer_mp_cloudfunctions_demo
 
 + 真机调试。点击菜单栏"真机调试"，手机微信扫描弹出的二维码，进入真机调试。可在手机小程序页面点击按钮进行调试。
 ![真机调试](image/mini_program/mp_remote_debug.png)
+
 ![真机调试](image/mini_program/mp_remote_debug_mobile.jpg)
 
 调试OK后，就可以发布小程序了
