@@ -147,7 +147,7 @@ TencentOS_tiny\tools\Mini_Program\iotexplorer_mp_cloudfunctions_demo
 ![api 3.0 explorer](image/mini_program/mp_api_explorer.png)
 
 + 创建并实现云函数
-  + 创建云函数query，将自动生成的NodeJS代码拷贝到云函数，并稍作修改即可使用。参考[TencentOS-tiny\tools\Mini_Program\iotexplorer_mp_cloudfunctions_demo\cloudfunctions\query\index.js](https://github.com/Tencent/TencentOS-tiny/blob/master/tools/Mini_Program/iotexplorer_mp_cloudfunctions_demo/cloudfunctions/query/index.js)
+  + 创建云函数query，将自动生成的NodeJS代码拷贝到云函数，并稍作修改即可使用。参考：[TencentOS-tiny\tools\Mini_Program\iotexplorer_mp_cloudfunctions_demo\cloudfunctions\query\index.js](https://github.com/Tencent/TencentOS-tiny/blob/master/tools/Mini_Program/iotexplorer_mp_cloudfunctions_demo/cloudfunctions/query/index.js)
 
   + 记得上传部署修改后的云函数
 
