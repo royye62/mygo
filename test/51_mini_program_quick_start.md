@@ -1,45 +1,45 @@
-# 小程序开发快速指引 
+# 1. 小程序开发快速指引
 
 <!-- TOC -->
 
-- [小程序开发快速指引](#小程序开发快速指引)
-    - [开发环境准备](#开发环境准备)
-        - [申请小程序账号](#申请小程序账号)
-        - [小程序管理后台](#小程序管理后台)
-        - [安装开发工具](#安装开发工具)
-    - [智能灯小程序Demo](#智能灯小程序demo)
-        - [概述](#概述)
-        - [前置工作](#前置工作)
-        - [普通开发方式（SDK）](#普通开发方式sdk)
-            - [导入工程](#导入工程)
-            - [修改配置](#修改配置)
-            - [功能扩展](#功能扩展)
-        - [云开发方式（云函数）](#云开发方式云函数)
-            - [导入工程](#导入工程-1)
-            - [开通云开发，创建环境](#开通云开发创建环境)
-            - [部署云函数](#部署云函数)
-            - [修改配置](#修改配置-1)
-            - [功能扩展：结合API 3.0 Explorer工具快速实现云函数](#功能扩展结合api-30-explorer工具快速实现云函数)
-        - [调试和发布](#调试和发布)
-        - [配置信息说明](#配置信息说明)
-    - [FAQ](#faq)
-        - [网络请求报错: reqeust:fail url not in domain list](#网络请求报错-reqeustfail-url-not-in-domain-list)
-        - [云开发: 初始化错误 cloud init error](#云开发-初始化错误-cloud-init-error)
-        - [云开发：云环境不存在 env not exists](#云开发云环境不存在-env-not-exists)
-        - [云开发：云函数不存在 Function not found](#云开发云函数不存在-function-not-found)
-        - [可以接入第三方服务吗？](#可以接入第三方服务吗)
+- [1. 小程序开发快速指引](#1-小程序开发快速指引)
+    - [1.1. 开发环境准备](#11-开发环境准备)
+        - [1.1.1. 申请小程序账号](#111-申请小程序账号)
+        - [1.1.2. 小程序管理后台](#112-小程序管理后台)
+        - [1.1.3. 安装开发工具](#113-安装开发工具)
+    - [1.2. 智能灯小程序Demo](#12-智能灯小程序demo)
+        - [1.2.1. 概述](#121-概述)
+        - [1.2.2. 前置工作](#122-前置工作)
+        - [1.2.3. 普通开发方式（SDK）](#123-普通开发方式sdk)
+            - [1.2.3.1. 导入工程](#1231-导入工程)
+            - [1.2.3.2. 修改配置](#1232-修改配置)
+            - [1.2.3.3. 功能扩展](#1233-功能扩展)
+        - [1.2.4. 云开发方式（云函数）](#124-云开发方式云函数)
+            - [1.2.4.1. 导入工程](#1241-导入工程)
+            - [1.2.4.2. 开通云开发，创建环境](#1242-开通云开发创建环境)
+            - [1.2.4.3. 部署云函数](#1243-部署云函数)
+            - [1.2.4.4. 修改配置](#1244-修改配置)
+            - [1.2.4.5. 功能扩展：结合API 3.0 Explorer工具快速实现云函数](#1245-功能扩展结合api-30-explorer工具快速实现云函数)
+        - [1.2.5. 调试和发布](#125-调试和发布)
+        - [1.2.6. 配置信息说明](#126-配置信息说明)
+    - [1.3. FAQ](#13-faq)
+        - [1.3.1. 网络请求报错: reqeust:fail url not in domain list](#131-网络请求报错-reqeustfail-url-not-in-domain-list)
+        - [1.3.2. 云开发: 初始化错误 cloud init error](#132-云开发-初始化错误-cloud-init-error)
+        - [1.3.3. 云开发：云环境不存在 env not exists](#133-云开发云环境不存在-env-not-exists)
+        - [1.3.4. 云开发：云函数不存在 Function not found](#134-云开发云函数不存在-function-not-found)
+        - [1.3.5. 可以接入第三方服务吗？](#135-可以接入第三方服务吗)
 
 <!-- /TOC -->
 
-## 开发环境准备
+## 1.1. 开发环境准备
 
-想了解更多小程序开发，请参见：[小程序官方开发指南](https://developers.weixin.qq.com/miniprogram/dev/framework/quickstart/getstart.html)
+> 想了解更多小程序开发，请参见：[小程序官方开发指南](https://developers.weixin.qq.com/miniprogram/dev/framework/quickstart/getstart.html)
 
-### 申请小程序账号
+### 1.1.1. 申请小程序账号
 
 进入 [小程序注册页](https://mp.weixin.qq.com/wxopen/waregister?action=step1&token=&lang=zh_CN) `https://mp.weixin.qq.com/` 根据指引填写信息和提交相应的资料，就可以拥有自己的小程序帐号
 
-### 小程序管理后台
+### 1.1.2. 小程序管理后台
 
 申请小程序成功后，登录[小程序管理后台](https://mp.weixin.qq.com/) 。在小程序管理平台，你可以管理你的小程序的权限，查看数据报表，发布小程序等操作。
 
@@ -47,13 +47,13 @@ AppID：在菜单 “设置”-“开发设置” 可以看到小程序的 AppID
 
 ![小程序后台](image/mini_program/mp_appid.png)
 
-### 安装开发工具
+### 1.1.3. 安装开发工具
 
 前往 [开发者工具下载页面](https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html) ，根据自己的操作系统下载对应的安装包进行安装。安装成功后，打开小程序开发者工具，用微信扫码登录开发者工具
 
-## 智能灯小程序Demo
+## 1.2. 智能灯小程序Demo
 
-### 概述
+### 1.2.1. 概述
 
 ![小程序开发方式](image/mini_program/mp_diagram.png)
 
@@ -64,7 +64,7 @@ TencentOS tiny 提供了两种开发方式的小程序Demo案例，帮助开发�
 1. 普通开发方式，使用SDK调用腾讯云API
 2. 云开发方式，在云函数中调用腾讯云API
 
-### 前置工作
+### 1.2.2. 前置工作
 Demo案例以开发智能灯应用为例子，在小程序开发之前，应该先完成以下工作：
 
 + 在腾讯云物联网开发平台IotExplorer创建智能灯产品和设备
@@ -75,8 +75,8 @@ Demo案例以开发智能灯应用为例子，在小程序开发之前，应该�
    
 参考智能灯数据模案例：TencentOS_tiny/examples/qcloud_iot_explorer_sdk_data_template
 
-### 普通开发方式（SDK）
-#### 导入工程
+### 1.2.3. 普通开发方式（SDK）
+#### 1.2.3.1. 导入工程
 在小程序开发工具中，导入项目：
 TencentOS_tiny\tools\Mini_Program\iotexplorer_mp_demo
 
@@ -84,20 +84,20 @@ TencentOS_tiny\tools\Mini_Program\iotexplorer_mp_demo
 
 > 注：AppID可在小程序管理后台获取，本地调试可以先使用测试号
 
-#### 修改配置
+#### 1.2.3.2. 修改配置
 在miniprogram/app.js里更新配置信息，参考[配置信息说明](#配置信息说明)
 ![更新配置](image/mini_program/mp_normaldev_update_config.png)
 
-#### 功能扩展
+#### 1.2.3.3. 功能扩展
 SDK支持的api参见iotclient.js，开发者可以基于案例进行功能扩展：TencentOS_tiny\tools\Mini_Program\iotexplorer_mp_demo\iotclient_for_miniprogram\iotclient.js
 
 > 注：腾讯云暂时没有提供小程序端的API SDK，本案例的小程序SDK(iotclient_for_miniprogram)是基于[腾讯云的NodeJS SDK](https://github.com/TencentCloud/tencentcloud-sdk-nodejs/tree/master/tencentcloud/iotexplorer)移植过来的
 
-### 云开发方式（云函数）
+### 1.2.4. 云开发方式（云函数）
 
-想了解更多云开发资料，可以参见[官方的云开发快速指引](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/quickstart.html)
+> 想了解更多云开发资料，可以参见[官方的云开发快速指引](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/quickstart.html)
 
-#### 导入工程
+#### 1.2.4.1. 导入工程
 
 在小程序开发工具中，导入云开发Demo项目：
 TencentOS_tiny\tools\Mini_Program\iotexplorer_mp_cloudfunctions_demo
@@ -106,7 +106,7 @@ TencentOS_tiny\tools\Mini_Program\iotexplorer_mp_cloudfunctions_demo
 
 > 注：AppID可在小程序管理后台获取；测试号不支持云开发，必须申请小程序账号
 
-#### 开通云开发，创建环境
+#### 1.2.4.2. 开通云开发，创建环境
 
 在使用云开发能力之前需要先开通云开发。在开发者工具工具栏左侧，点击 “云开发” 按钮即可打开云控制台、根据提示开通云开发、创建云环境。
 
@@ -116,7 +116,7 @@ TencentOS_tiny\tools\Mini_Program\iotexplorer_mp_cloudfunctions_demo
 
 > 例如：填入环境名称为tos-demo, 环境ID为tos-demo。
 
-#### 部署云函数
+#### 1.2.4.3. 部署云函数
 
 云函数需要部署到云环境中才能生效。在云函数目录上，点击右键，选择"创建并部署：云端安装依赖（不上传node_modules）"
 
@@ -128,11 +128,11 @@ TencentOS_tiny\tools\Mini_Program\iotexplorer_mp_cloudfunctions_demo
 
 ![云开发控制台的云函数](images/../image/mini_program/mp_clouddev_demo_cloudfunctions.png)
 
-#### 修改配置
+#### 1.2.4.4. 修改配置
 在miniprogram/app.js里更新配置信息，参考[配置信息说明](#配置信息说明)
 ![更新项目配置](image/mini_program/mp_clouddev_demo_update_config.png)
 
-#### 功能扩展：结合API 3.0 Explorer工具快速实现云函数  
+#### 1.2.4.5. 功能扩展：结合API 3.0 Explorer工具快速实现云函数  
 
 腾讯云提供的[API 3.0 Explorer工具](https://console.cloud.tencent.com/api/explorer)，可以非常方便的生成 API SDK代码。只需要稍微修改，就可以直接在云函数中使用。
 [API 3.0 Explorer的介绍](https://cloud.tencent.com/document/api)
@@ -157,7 +157,7 @@ TencentOS_tiny\tools\Mini_Program\iotexplorer_mp_cloudfunctions_demo
 ```javascript
     // 调用云函数query
     wx.cloud.callFunction({
-      name: 'query2',
+      name: 'query',
       data: queryData,
       success: res => {
         try {
@@ -187,7 +187,7 @@ TencentOS_tiny\tools\Mini_Program\iotexplorer_mp_cloudfunctions_demo
     })  
 ```
 
-### 调试和发布
+### 1.2.5. 调试和发布
 上文的步骤完成后，就可以对基本功能进行调试，如：查询和控制设备。
 
 + 本地调试。点击菜单栏的"编译"按钮进行编译，左侧模拟器中点击查询和发送按钮，下侧调试器中查看调试信息
@@ -203,7 +203,7 @@ TencentOS_tiny\tools\Mini_Program\iotexplorer_mp_cloudfunctions_demo
 
 + 发布版本。登录小程序管理后台，进入“管理”-“版本管理”。将开发版本提交审核，等待审核通过后，点击发布版本。
 
-### 配置信息说明
+### 1.2.6. 配置信息说明
 + productId, deviceName
 
 产品ID和设备名称。用于IotExplorer API接口调用的参数。在腾讯云控制台-物联网开发平台-产品开发-设备调试中，获取产品ID和设备名称
@@ -224,8 +224,8 @@ Region字段，接口服务的地域，填写"ap-guangzhou"即可
 
 云开发的环境ID。填入云开发创建的环境ID
 
-## FAQ
-### 网络请求报错: reqeust:fail url not in domain list
+## 1.3. FAQ
+### 1.3.1. 网络请求报错: reqeust:fail url not in domain list
  
 报错信息:
 ````
@@ -241,14 +241,14 @@ https://iotexplorer.tencentcloudapi.com 不在以下 request 合法域名列表�
 
 + 如果是真机调试或发布小程序，则需要在小程序管理后台进行服务器域名配置进入微信公众平台小程序后台 - 开发 - 开发设置 - 服务器域名 - 输入域名: `iotexplorer.tencentcloudapi.com`。参考[微信小程序添加服务器端接口域名](https://jingyan.baidu.com/article/ce09321bb6e9c12bff858f92.html)
 
-### 云开发: 初始化错误 cloud init error
+### 1.3.2. 云开发: 初始化错误 cloud init error
 报错信息
 ````
 cloud init error：{ errMsg: "invalid scope" }
 ````
 首次开通云环境后，需等待大约 10 分钟方可正常使用云 API，在此期间官方后台服务正在做准备服务，如尝试在小程序中调用云 API 则会报 cloud init error：{ errMsg: "invalid scope" } 的错误
 
-### 云开发：云环境不存在 env not exists
+### 1.3.3. 云开发：云环境不存在 env not exists
 
 报错信息：
 ````
@@ -258,13 +258,13 @@ Error: errCode: -404011 cloud function execution error | errMsg: cloud.callFunct
 + 确定是否开通云开发并创建环境
 + 确定配置文件app.js中env字段是否和云开发中创建的云环境ID一致
 
-### 云开发：云函数不存在 Function not found
+### 1.3.4. 云开发：云函数不存在 Function not found
 ````
 Error: errCode: -404011 cloud function execution error | errMsg: cloud.callFunction:fail requestID , cloud function service error code -504002, error message Function not found [query]; at cloud.callFunction api
 ````
 
 + 确认云函数是否部署到对应云环境
 
-### 可以接入第三方服务吗？
+### 1.3.5. 可以接入第三方服务吗？
 
 可以。只要是符合要求的服务，小程序都能访问。简单来说，有以下几个要求：必须使用https/wss请求，请求域名需要做备案，并带有可信任的SSL证书。详细参见[小程序网络能力使用说明](https://developers.weixin.qq.com/miniprogram/dev/framework/ability/network.html)
