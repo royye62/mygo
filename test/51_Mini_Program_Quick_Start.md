@@ -134,17 +134,16 @@ TencentOS_tiny\tools\Mini_Program\iotexplorer_mp_cloudfunctions_demo
 
 #### 1.2.4.5. 功能扩展：结合API 3.0 Explorer工具快速实现云函数  
 
-腾讯云提供的[API 3.0 Explorer工具](https://console.cloud.tencent.com/api/explorer)，可以非常方便的生成 API SDK代码。只需要稍微修改，就可以直接在云函数中使用。
-[API 3.0 Explorer的介绍](https://cloud.tencent.com/document/api)
+腾讯云提供的[API 3.0 Explorer](https://cloud.tencent.com/document/api)，可以非常方便的生成 API SDK代码。只需要稍微修改，就可以直接在云函数中使用。
 
 ![api 3.0 explorer](image/mini_program/mp_api_explorer.png)
 
 + 自动生成API SDK代码
-  + API 3.0 Explorer工具使用步骤：
-  + 左侧选择对应服务-“物联网开发平台”
-  + 选择对应接口，如：“数据查询相关接口”-“获取设备属性数据”
+  + 进入[API 3.0 Explorer工具](https://console.cloud.tencent.com/api/explorer)
+  + 左侧选择对应服务，如：“物联网开发平台”
+  + 继续选择对应接口，如：“数据查询相关接口”-“获取设备属性数据”
   + 填写个人密钥和输入参数。参见[配置信息说明](#配置信息说明)
-  + 通过在线调用，测试接口是否可用
+  + 使用在线调用，测试接口是否调用成功
   + 测试完成后，选择生成NodeJS代码。将代码拷贝，后续用于云函数中
 
 + 创建并实现云函数
