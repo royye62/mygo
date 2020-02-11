@@ -124,7 +124,8 @@ TencentOS_tiny\tools\Mini_Program\iotexplorer_mp_cloudfunctions_demo
 ![部署云函数](image/mini_program/mp_clouddev_demo_upload_function.png)
 
 案例的cloudfunctions目录提供了两个云函数query和control，通过调用Iotexplorer的查询和控制接口，实现了对设备的查询和控制。
-分别将control和query云函数部署到云环境中。上传成功后，可以在云开发控制台里看到对应的云函数。
+
+分别将control和query云函数部署到云环境中。部署成功后，可以在云开发控制台里看到对应的云函数。
 
 ![云开发控制台的云函数](images/../image/mini_program/mp_clouddev_demo_cloudfunctions.png)
 
@@ -238,7 +239,7 @@ https://iotexplorer.tencentcloudapi.com 不在以下 request 合法域名列表�
 + 如果是本地调试，可以在本地设置中勾选`不校验合法域名`
 ![不校验合法域名](image/mini_program/mp_local_domain_noncheck.png)
 
-+ 如果是真机调试或发布小程序，则需要在小程序管理后台进行服务器域名配置进入微信公众平台小程序后台 - 开发 - 开发设置 - 服务器域名 - 输入域名: `iotexplorer.tencentcloudapi.com`。参考[微信小程序添加服务器端就接口域名](https://jingyan.baidu.com/article/ce09321bb6e9c12bff858f92.html)
++ 如果是真机调试或发布小程序，则需要在小程序管理后台进行服务器域名配置进入微信公众平台小程序后台 - 开发 - 开发设置 - 服务器域名 - 输入域名: `iotexplorer.tencentcloudapi.com`。参考[微信小程序添加服务器端接口域名](https://jingyan.baidu.com/article/ce09321bb6e9c12bff858f92.html)
 
 ### 云开发: 初始化错误 cloud init error
 报错信息
